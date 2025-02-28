@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function withoutUseState() {
+function WithoutUseState() {
   const [count, setCount] = useState(0);
 
   // This function is recreated on every render
@@ -18,4 +18,4 @@ function withoutUseState() {
   );
 }
 
-export default withoutUseState;
+export default WithoutUseState;
