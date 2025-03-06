@@ -13,7 +13,7 @@ const Board = ({ nextIsX, squares, onPlay }) => {
         nextSquares[i]="O"
       }
         else{
-          nextSquares[i]="X"
+          nextSquares[i]="X";
         }
         onPlay(nextSquares);
       console.log("clicked");

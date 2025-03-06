@@ -29,18 +29,25 @@ export default function App() {
     }
     return (
       <li>
-        <button onClick={() => jumpTo(move)}>{description}</button>
+        <button onClick={() => jumpTo(move)} className="hist-btns">{description}</button>
       </li>
     );
   });
 
   return (
-    <div className="game">
-      <div className="game-board">
-        <Board nextIsX={xIsNext} squares={currentSquares} onPlay={handlePlay} />
-      </div>
-      <div className="game-info">
-        <ol>{moves}</ol>
+    <div className="full-screen">
+      <h2>TicTacToe Game</h2>
+      <div className="game">
+        <div className="game-board">
+          <Board
+            nextIsX={xIsNext}
+            squares={currentSquares}
+            onPlay={handlePlay}
+          />
+        </div>
+        <div className="game-info">
+          <ol>{moves}</ol>
+        </div>
       </div>
     </div>
   );
